@@ -1,11 +1,19 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './pages/Home';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '*',
+    element: <div>Page not found</div>,
+  },
+]);
+
 function App() {
-  return (
-    <>
-      <h1 className="text-red-600 font-barlowCondensed">Space tourism</h1>
-      <h2 className="text-red-600 font-barlow">Space tourism</h2>
-      <h3 className="text-red-600 font-bellefair">Space tourism</h3>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

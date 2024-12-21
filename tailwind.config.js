@@ -12,7 +12,9 @@ export default {
         bellefair: ['Bellefair', 'serif'],
       },
         backgroundImage: {
-        'custom-pattern': "url('')",
+        'home-desktop': "url('src/assets/home/background-home-desktop.jpg')",
+        'home-mobile': "url('src/assets/home/background-home-mobile.jpg')",
+        'home-tablet': "url('src/assets/home/background-home-tablet.jpg')",
       },
     },
   },
